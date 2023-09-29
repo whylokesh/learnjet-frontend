@@ -4,6 +4,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { ComplexNavbar } from './components/navbar/page';
 import { DrawerWithNavigation } from './components/sidebarDrawer/page';
+import { CarouselCustomNavigation } from './components/carousel/page';
 
 config.autoAddCss = false;
 
@@ -12,6 +13,7 @@ export default function Home() {
     <>
       <ComplexNavbar/>
       <DrawerWithNavigation/>
+      <CarouselCustomNavigation/>
     </>
   );
 }
