@@ -14,7 +14,7 @@ export function FeaturedProducts() {
 
             <div className="my-2">
                 <Typography variant="h4" color="blue-gray" className="text-left ml-6">Courses:</Typography>
-                <div className="overflow-x-auto">
+                <div className="overflow-x-auto p-3">
                     <div className="flex space-x-20">
                         {/* First Slide */}
                         <div className="min-w-[300px]">
@@ -55,7 +55,7 @@ export function FeaturedProducts() {
             </div>
             <div className="my-2">
                 <Typography variant="h4" color="blue-gray" className="text-left ml-6">E-books:</Typography>
-                <div className="overflow-x-auto">
+                <div className="overflow-x-auto p-3">
                     <div className="flex space-x-20">
                         {/* First Slide */}
                         <div className="min-w-[300px]">
@@ -96,7 +96,7 @@ export function FeaturedProducts() {
             </div>
             <div className="my-2">
                 <Typography variant="h4" color="blue-gray" className="text-left ml-6">Template Bundles:</Typography>
-                <div className="overflow-x-auto">
+                <div className="overflow-x-auto p-3">
                     <div className="flex space-x-20">
                         {/* First Slide */}
                         <div className="min-w-[300px]">
