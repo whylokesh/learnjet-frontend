@@ -19,17 +19,17 @@ export function CarouselCustomNavigation() {
                 )}
             >
                 <img
-                src="https://cdn.pixabay.com/photo/2015/10/29/14/39/web-1012469_1280.jpg"
+                src="https://64.media.tumblr.com/bcba84fd2ea947e639a2345c6e16068a/tumblr_inline_pg1m7op5eI1upiwjr_1280.png"
                     alt="image 1"
                     className="h-full w-full object-cover"
                 />
                 <img
-                src="https://cdn.pixabay.com/photo/2015/10/29/14/39/web-1012469_1280.jpg"
+                src="https://64.media.tumblr.com/bcba84fd2ea947e639a2345c6e16068a/tumblr_inline_pg1m7op5eI1upiwjr_1280.png"
                     alt="image 1"
                     className="h-full w-full object-cover"
                 />
                 <img
-                src="https://cdn.pixabay.com/photo/2015/10/29/14/39/web-1012469_1280.jpg"
+                src="https://64.media.tumblr.com/bcba84fd2ea947e639a2345c6e16068a/tumblr_inline_pg1m7op5eI1upiwjr_1280.png"
                     alt="image 1"
                     className="h-full w-full object-cover"
                 />

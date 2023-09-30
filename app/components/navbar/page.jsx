@@ -66,7 +66,7 @@ function ProfileMenu() {
                 <Button
                     variant="text"
                     color="blue-gray"
-                    className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto"
+                    className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 ml-2"
                 >
                     <Avatar
                         variant="circular"
@@ -229,79 +229,97 @@ function NavList() {
 
 export function ComplexNavbar() {
     const [isNavOpen, setIsNavOpen] = React.useState(false);
+    const [isSearchVisible, setIsSearchVisible] = React.useState(false);
+    const [isSearchIconVisible, setIsSearchIconVisible] = React.useState(true); // New state for toggling the icon
 
     const toggleIsNavOpen = () => setIsNavOpen((cur) => !cur);
-
-    React.useEffect(() => {
-        window.addEventListener(
-            "resize",
-            () => window.innerWidth >= 960 && setIsNavOpen(false),
-        );
-    }, []);
+    const toggleSearchVisibility = () => {
+        setIsSearchVisible((cur) => !cur);
+        setIsSearchIconVisible((cur) => !cur); // Toggle the icon state
+    };
 
     return (
         <Navbar className="mx-auto max-w-screen-3xl p-2 lg:rounded-xl select-none">
-
             <div className="relative mx-auto flex items-center justify-between text-blue-gray-900 my-1">
                 <div className="flex items-center">
-
-                    {/* <DrawerWithNavigation/> */}
-
-                    {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="black" className="w-8 h-8">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg> */}
-
                     <Typography
                         as="a"
                         href="#"
-                        className="mr-4 ml-2 cursor-pointer py-1.5 font-bold text-2xl pl-10 italic"
+                        className={`mr-4 ml-2 cursor-pointer py-1.5 font-bold text-2xl pl-10 italic sm:block md:block lg:block ${isSearchVisible ? "hidden" : ""
+                            }`}
                     >
                         Metalink
                     </Typography>
                 </div>
 
-                <div className="hidden sm:block md:block lg:block w-10/12 sm:w-2/3 md:w-1/3 sm:mr-3" >
-                    <Input  label="Search here..." className="text-4xl" icon={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                    </svg>
-                    } />
+                <div className={`w-8/12	ml-10 sm:ml-0 md:ml-0 lg:ml-0 sm:w-2/3 md:w-1/3 md:mr-0 lg:mr-0 sm:mr-3 sm:block md:block lg:block ${isSearchVisible ? "" : "hidden"}`}>
+                    <Input
+                        label="Search here..."
+                        className="text-4xl"
+                        icon={
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                strokeWidth={1.5}
+                                stroke="currentColor"
+                                className="w-5 h-5"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                                />
+                            </svg>
+                        }
+                    />
                 </div>
 
-
-                {/* <IconButton
-                    size="sm"
-                    color="blue-gray"
-                    variant="text"
-                    onClick={toggleIsNavOpen}
-                    className="ml-auto mr-2 lg:hidden"
-                >
-                    <Bars2Icon className="h-6 w-6" />
-                </IconButton> */}
-
-
-                <div className="block sm:hidden md:hidden lg:hidden mx-3" >
-
-                    <IconButton variant="text" color="blue-gray">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                        </svg>
+                <div className="block sm:hidden md:hidden lg:hidden mx-2">
+                    <IconButton variant="text" color="blue-gray" onClick={toggleSearchVisibility}>
+                        {isSearchIconVisible ? ( // Render different SVG based on state
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                strokeWidth={1.5}
+                                stroke="currentColor"
+                                className="w-6 h-6"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                                />
+                            </svg>
+                        ) : (
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                strokeWidth={1.5}
+                                stroke="currentColor"
+                                className="w-6 h-6"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    d="M6 18L18 6M6 6l12 12"
+                                />
+                            </svg>
+                        )}
                     </IconButton>
                 </div>
 
-
-                <div className="flex gap-2 sm:hidden md:flex lg:flex hidden">
-
-                    <NotificationsMenu/>
-                    <Button variant="gradient" color="blue" className="rounded-full">
+                <div className={`flex gap-2 sm:hidden md:flex lg:flex hidden`}>
+                    <NotificationsMenu />
+                    <Button variant="gradient" color="light-blue" className="">
                         Create a Product
                     </Button>
                     <ProfileMenu />
-
                 </div>
             </div>
-            <MobileNav open={isNavOpen} className="overflow-scroll">
-
-            </MobileNav>
+            <MobileNav open={isNavOpen} className="overflow-scroll"></MobileNav>
         </Navbar>
     );
 }

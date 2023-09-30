@@ -6,6 +6,8 @@ import { ComplexNavbar } from './components/navbar/page';
 import { DrawerWithNavigation } from './components/sidebarDrawer/page';
 import { CarouselCustomNavigation } from './components/carousel/page';
 import { CardDefault } from './components/card/page';
+import { FeaturedProducts } from './components/featuredProducts/page';
+import { ProfileBlogCard } from './components/profileCard/page';
 
 config.autoAddCss = false;
 
@@ -15,7 +17,9 @@ export default function Home() {
       <ComplexNavbar/>
       <DrawerWithNavigation/>
       <CarouselCustomNavigation/>
-      <CardDefault/>
+      {/* <CardDefault/> */}
+      <FeaturedProducts/>
+      {/* <ProfileBlogCard/> */}
     </>
   );
 }
