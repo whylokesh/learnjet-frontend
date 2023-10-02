@@ -11,6 +11,7 @@ import { PopularCreators } from './components/popularCreators/page';
 import { CreateEarnCard } from './components/createEarnCard/page';
 import { TestimonialSection } from './components/testimonialSection/page';
 import { FooterWithSocialLinks } from './components/footer/page';
+import { AboutUsCard } from "./components/aboutUsCard/page";
 
 config.autoAddCss = false;
 
@@ -21,6 +22,7 @@ export default function Home() {
       <DrawerWithNavigation/>
       <CarouselCustomNavigation/>
       <FeaturedProducts/>
+      <AboutUsCard/>
       <PopularCreators/>
       <CreateEarnCard/> 
       <TestimonialSection/>
