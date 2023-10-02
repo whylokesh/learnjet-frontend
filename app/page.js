@@ -1,4 +1,3 @@
-import Image from 'next/image'
  // import Font Awesome CSS
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
