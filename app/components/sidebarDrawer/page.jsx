@@ -18,7 +18,7 @@ export function DrawerWithNavigation() {
     const closeDrawer = () => setOpen(false);
 
     return (
-        <div className="absolute top-4  left-2">
+        <div className="absolute top-4 left-2">
             
             <IconButton variant="text" color="blue-gray" onClick={openDrawer} >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="black" className="w-8 h-8">
