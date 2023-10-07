@@ -242,18 +242,16 @@ export function ComplexNavbar() {
     return (
         <Navbar className="mx-auto max-w-screen-3xl p-2 lg:rounded-xl select-none">
             <div className="relative mx-auto flex items-center justify-between text-blue-gray-900 my-1">
-                <Link href="/">
-                    <div className="flex items-center">
+                <div className="flex items-center">
                         <Typography
                             as="a"
-                            href="#"
+                            href="/"
                             className={`mr-4 ml-2 cursor-pointer py-1.5 font-bold text-2xl pl-10 italic sm:block md:block lg:block ${isSearchVisible ? "hidden" : ""
                                 }`}
                         >
                             Metalink
                         </Typography>
-                    </div>
-                </Link>
+                </div>
 
                 <div className={`w-8/12	ml-10 sm:ml-0 md:ml-0 lg:ml-0 sm:w-2/3 md:w-1/3 md:mr-0 lg:mr-0 sm:mr-3 sm:block md:block lg:block ${isSearchVisible ? "" : "hidden"}`}>
                     <Input
