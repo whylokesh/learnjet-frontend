@@ -5,7 +5,7 @@ import { Typography } from "@material-tailwind/react";
 
 export function PopularCreators() {
     return (
-        <div className="my-9">
+        <div className="py-9 bg-blue-gray-50/50">
             <Typography variant="h2" color="blue-gray" className="text-center my-8">Popular Creators</Typography>
 
             <div className="m-4 overflow-x-auto">

@@ -11,6 +11,7 @@ import {
     ListItemSuffix,
     Chip,
 } from "@material-tailwind/react";
+import Link from "next/link";
 
 export function DrawerWithNavigation() {
     const [open, setOpen] = React.useState(false);
@@ -50,6 +51,7 @@ export function DrawerWithNavigation() {
                     </IconButton>
                 </div>
                 <List>
+                    <Link href="/dashboard">
                     <ListItem>
                         <ListItemPrefix>
                             <svg
@@ -67,6 +69,7 @@ export function DrawerWithNavigation() {
                         </ListItemPrefix>
                         Dashboard
                     </ListItem>
+                    </Link>
                     <ListItem>
                         <ListItemPrefix>
                             <svg

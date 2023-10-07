@@ -8,7 +8,7 @@ import './fpstyle.css'
 export function FeaturedProducts() {
 
     return (
-        <div className="my-9 lg:pb-4">
+        <div className="py-9 lg:pb-4 bg-blue-gray-50/50">
 
             <Typography variant="h2" color="blue-gray" className="text-center my-2">Most Popular</Typography>
 

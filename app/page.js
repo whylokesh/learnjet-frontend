@@ -17,16 +17,16 @@ config.autoAddCss = false;
 
 export default function Home() {
   return (
-    <>
-      <ComplexNavbar/>
-      <DrawerWithNavigation/>
-      <CarouselCustomNavigation/>
-      <FeaturedProducts/>
-      <AboutUsCard/>
-      <PopularCreators/>
-      <CreateEarnCard/> 
-      <TestimonialSection/>
-      <FooterWithSocialLinks/>
-    </>
+    <div className="">
+      <ComplexNavbar />
+      <DrawerWithNavigation />
+      <CarouselCustomNavigation />
+      <FeaturedProducts />
+      <AboutUsCard />
+      <PopularCreators />
+      <CreateEarnCard />
+      <TestimonialSection />
+      <FooterWithSocialLinks />
+    </div>
   );
 }

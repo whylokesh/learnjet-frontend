@@ -11,7 +11,7 @@ export function TestimonialSection() {
                 <hr className="w-4/5 text-center" />
             </div> */}
 
-            <div className="mt-10 text-center border-b pb-8">
+            <div className="bg-blue-gray-50/50 pt-10 text-center border-b pb-8">
                 <Typography variant="h2" color="blue-gray" className="text-center mb-10">Testimonials</Typography>
 
                 <div className="flex flex-wrap justify-center gap-8 m-4">
