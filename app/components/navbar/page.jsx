@@ -31,6 +31,7 @@ import Link from "next/link";
 import { Input } from "@material-tailwind/react";
 import { NotificationsMenu } from "../notificationMenu/page";
 import { DrawerWithNavigation } from "../sidebarDrawer/page";
+import { CreateProductDialog } from "../createProductButton/page";
 
 // profile menu component
 const profileMenuItems = [
@@ -314,9 +315,7 @@ export function ComplexNavbar() {
 
                 <div className={`flex gap-2 sm:hidden md:flex lg:flex hidden`}>
                     <NotificationsMenu />
-                    <Button variant="gradient" color="light-blue" className="">
-                        Create a Product
-                    </Button>
+                    <CreateProductDialog/>
                     <ProfileMenu />
                 </div>
             </div>
