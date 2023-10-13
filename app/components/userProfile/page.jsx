@@ -1,55 +1,167 @@
 "use client"
+import {
+    Card,
+    CardHeader,
+    CardBody,
+    CardFooter,
+    Typography,
+    Button,
+
+
+    TabsBody,
+    TabPanel,
+
+    Input,
+    Textarea,
+    Chip,
+    Tabs,
+    TabsHeader,
+    Tab,
+    Avatar,
+    IconButton,
+    Tooltip,
+} from "@material-tailwind/react";
 import React from 'react';
+import {
+    Square3Stack3DIcon,
+    UserCircleIcon,
+    Cog6ToothIcon,
+} from "@heroicons/react/24/solid";
+
 import { CardDefault } from '../card/page';
-import { Typography, Button } from "@material-tailwind/react";
 
 const UserProfile = () => {
+
+    function TabsWithIcon() {
+        const data = [
+            {
+                label: "Course",
+                value: "course",
+                icon: Square3Stack3DIcon,
+                desc: `It really matters and then like it really doesn't matter.
+      What matters is the people who are sparked by it. And the people
+      who are like offended by it, it doesn't matter.`,
+            },
+            {
+                label: "Reviews",
+                value: "profile",
+                icon: UserCircleIcon,
+                desc: `Because it's about motivating the doers. Because I'm here
+      to follow my dreams and inspire other people to follow their dreams, too.`,
+            },
+            {
+                label: "Settings",
+                value: "settings",
+                icon: Cog6ToothIcon,
+                desc: `We're not always in the position that we want to be at.
+      We're constantly growing. We're constantly making mistakes. We're
+      constantly trying to express ourselves and actualize our dreams.`,
+            },
+        ];
+        return (
+            <Tabs value="dashboard">
+                <TabsHeader className="">
+                    {data.map(({ label, value, icon }) => (
+                        <Tab key={value} value={value}>
+                            <div className="flex items-center gap-2">
+                                {React.createElement(icon, { className: "w-5 h-5" })}
+                                {label}
+                            </div>
+                        </Tab>
+                    ))}
+                </TabsHeader>
+                <TabsBody className="flex flex-col md:flex-row lg:flex-row flex-wrap gap-1 py-3 justify-center">
+                    {/* {data.map(({ value, desc }) => (
+                        <TabPanel key={value} value={value}>
+                            {desc}
+                        </TabPanel>
+                    ))} */}
+
+                    <CardDefault />
+                    <CardDefault />
+                    <CardDefault />
+                    <CardDefault />
+                    <CardDefault />
+                    <CardDefault />
+                    <CardDefault />
+                    <CardDefault />
+                </TabsBody>
+            </Tabs>
+        );
+    }
+
+
+
     return (
-        <div className="mx-2 py-2 border-b">
-            <div className="bg-white rounded-lg">
-                {/* Profile Header */}
-                <div className="bg-cover bg-center bg-no-repeat rounded-lg p-4 md:p-8 lg:p-12 xl:p-16 h-40 lg:h-96 md:h-72 flex flex-col justify-center items-center" style={{ backgroundImage: 'url("https://64.media.tumblr.com/a628671585da20ab6277e7fe036e16d7/tumblr_pfhsg9Opc91uibr8q_1280.png")' }}>
-                    <img
-                        src="https://s1-www.textcontrol.com/application-1.5843.71412/img/blog/author/gunnar-giffey.jpg"
-                        alt="Profile"
-                        className="w-20 h-20 lg:w-60 lg:h-60 md:w-40 md:h-40 sm:w-20 sm:h-20 rounded-full border-4 border-white shadow-lg mx-auto"
-                    />
-                    {/* <h1 className="text-2xl lg:text-4xl font-semibold text-white text-center mt-2">Username</h1> */}
-                </div>
+        <div className="p-4 bg-blue-gray-50/50 select-none" >
 
-                {/* Profile Navigation */}
-                <div className="flex flex-col justify-center items-center py-4 border-b">
+            <Card className="mt-6 w-full">
 
-                    <Typography variant="h4" color="blue-gray" className="text-center my-3">User's Full Name</Typography>
+                <div className="flex border-b pb-4 md:pb-6 lg:pb-10">
 
-                    <div className="flex flex-wrap justify-center space-x-4">
-                        <Typography variant="lead" color="blue-gray" className="text-center text-base">@whyusername</Typography>
-                        <Typography variant="lead" color="blue-gray" className="text-center text-base">4.3 Ratings</Typography>
-                        <Typography variant="lead" color="blue-gray" className="text-center text-base">4 Products</Typography>
+
+                    <CardHeader color="transparent" shadow={false} className="w-[10rem] h-[10rem] sm:w-[14rem] sm:h-[14rem] md:w-[20rem] md:h-[20rem] lg:w-[29rem] lg:h-[29rem]">
+                        {/* <img
+                            src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                            alt="card-image"
+                        /> */}
+                        {/* <Avatar src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="avatar" size="xxl" /> */}
+
+                        <img
+                            className="h-full w-full rounded-full object-cover object-center"
+                            src="https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
+                            alt="nature image"
+                        />
+                    </CardHeader>
+
+
+                    <div className="w-1/2 flex flex-col gap-1 p-2 md:p-6 lg:p-10 justify-center">
+
+                        <div className="flex flex-col items-start">
+
+                            <Typography variant="h1" className="text-xl sm:text-3xl md:text-4xl lg:text-6xl">Full Name</Typography>
+
+                            <div className="flex flex-row flex-wrap">
+
+                                <Typography variant="lead" className="text-xs sm:text-sm md:text-lg lg:text-2xl m-1">
+                                    @username
+                                </Typography>
+                                <Typography variant="lead" className="text-xs sm:text-sm md:text-lg lg:text-2xl m-1">
+                                    4.5 stars
+                                </Typography>
+                                <Typography variant="lead" className="text-xs sm:text-sm md:text-lg lg:text-2xl m-1">
+                                    14 Course
+                                </Typography>
+
+                            </div>
+
+                            <Typography variant="lead" className="text-xs sm:text-sm md:text-lg lg:text-2xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta harum atque mollitia?</Typography>
+
+                        </div>
 
                     </div>
 
-                    {/* User Bio */}
-                    <Typography variant="paragraph" color="blue-gray" className="text-center my-3 px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget hendrerit nisi.  </Typography>
                 </div>
+                <CardBody>
+
+                    <TabsWithIcon />
 
 
-                {/* User Content */}
-                <div className="flex flex-wrap justify-center gap-2 my-4">
-                    {/* Sample Content Items */}
-                    {/* You can map through the user's content and display them here */}
-                    <CardDefault />
-                    <CardDefault />
-                    <CardDefault />
-                    <CardDefault />
 
-                </div>
-                    <div className="my-6 flex items-center justify-center">
-                        <a href="#buttons-with-link" >
-                            <Button variant="outlined">View all</Button>
-                        </a>
-                    </div>
-            </div>
+                    {/* <Typography variant="h5" color="blue-gray" className="mb-2">
+                        UI/UX Review Check
+                    </Typography>
+                    <Typography>
+                        The place is close to Barceloneta Beach and bus stop just 2 min by
+                        walk and near to &quot;Naviglio&quot; where you can enjoy the main
+                        night life in Barcelona.
+                    </Typography> */}
+                </CardBody>
+                {/* <CardFooter className="pt-0">
+                    <Button>Read More</Button>
+                </CardFooter> */}
+            </Card>
+
         </div>
     );
 };
