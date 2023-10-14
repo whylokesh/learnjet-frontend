@@ -29,7 +29,7 @@ export function CardDefault() {
             </CardBody>
             <CardFooter className="pt-0 flex justify-between items-center">
                 <Typography variant="h3" color="blue-gray" className="">
-                    $199
+                    ₹199
                 </Typography>
                 <Button color="light-blue">Read More</Button>
             </CardFooter>
