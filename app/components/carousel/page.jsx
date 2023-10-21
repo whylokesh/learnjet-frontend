@@ -3,7 +3,7 @@ import { Carousel } from "@material-tailwind/react";
 
 export function CarouselCustomNavigation() {
     return (
-        <div className="bg-blue-gray-50/50 p-2 py-2 lg:p-4 md:p-3">
+        <div className="bg-blue-gray-50/50 p-4 py-2 lg:p-4 md:p-3">
             <Carousel
                 className="rounded-xl  w-fit h-3/4"
                 navigation={({ setActiveIndex, activeIndex, length }) => (

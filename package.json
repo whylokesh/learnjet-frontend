@@ -22,8 +22,11 @@
     "react-dom": "latest"
   },
   "devDependencies": {
+    "@types/node": "20.8.7",
+    "@types/react": "18.2.30",
     "autoprefixer": "latest",
     "postcss": "latest",
-    "tailwindcss": "latest"
+    "tailwindcss": "latest",
+    "typescript": "5.2.2"
   }
 }

@@ -9,7 +9,7 @@ import {
 
 export function AboutUsCard() {
     return (
-        <Card shadow={false} className="bg-blue-gray-50/50 p-4 flex-col sm:flex:col md:flex-col lg:flex-row">
+        <Card shadow={false} className="bg-blue-gray-50/50 lg:p-9 md:p-6 p-4 flex-col sm:flex:col md:flex-col lg:flex-row py-8">
                 <CardHeader
                     shadow={false}
                     floated={false}

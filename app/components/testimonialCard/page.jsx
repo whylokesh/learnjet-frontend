@@ -25,7 +25,7 @@ function StarIcon() {
 
 export function TestimonialCard() {
     return (
-        <Card color="transparent" shadow={false} className="w-full max-w-[30rem]">
+        <Card color="transparent" shadow={false} className="w-full max-w-[25rem]">
             <div className="flex flex-col items-center p-4 rounded-lg">
                 <Avatar
                     size="lg"

@@ -13,6 +13,7 @@ import { TestimonialSection } from './components/testimonialSection/page';
 import { FooterWithSocialLinks } from './components/footer/page';
 import { AboutUsCard } from "./components/aboutUsCard/page";
 import { FrequentlyAskedSection } from "./components/frequentlyAskedSection/page";
+import { GameChange } from "./components/ChangeTheGame/page";
 
 config.autoAddCss = false;
 
@@ -27,6 +28,7 @@ export default function Home() {
       <PopularCreators />
       <CreateEarnCard />
       <TestimonialSection />
+      <GameChange />
       <FrequentlyAskedSection/>
       <FooterWithSocialLinks />
     </div>

@@ -28,7 +28,7 @@ export function FrequentlyAskedSection() {
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
     return (
-        <div className="p-6 py-9 bg-blue-gray-50/50">
+        <div className="p-9 py-9 bg-blue-gray-50/50">
 
             <Typography variant="h2" color="blue-gray" className="text-center my-6">Frequently asked questions</Typography>
 

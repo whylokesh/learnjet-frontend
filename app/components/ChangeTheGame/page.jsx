@@ -7,10 +7,10 @@ import {
     Button,
 } from "@material-tailwind/react";
 
-export function CreateEarnCard() {
+export function GameChange() {
     return (
         <div className="p-8 bg-blue-gray-50/50">
-            <Card className="flex flex-col justify-center items-center" color="light-blue" variant="gradient">
+            <Card className="flex flex-col justify-center items-center" color="pink" variant="gradient">
                 <CardBody className="flex flex-col justify-center items-center">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
