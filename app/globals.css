@@ -6,3 +6,9 @@
 *::-webkit-scrollbar {
   display: none;
 }
+
+/* heading------------------------- md:text-[1.75rem] text-2xl lg:text-[2rem] */
+/* sub heading ---------------------   text-xl */
+/* description -----------------------   text-sm */
+/* paragraph ------------------------------ text-sm */
+/* Buttons ----------------------------------  text-xs */

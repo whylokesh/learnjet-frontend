@@ -18,7 +18,7 @@ export function CardDefault() {
                 />
             </CardHeader>
             <CardBody>
-                <Typography variant="h5" color="blue-gray" className="mb-2">
+                <Typography variant="h5" color="blue-gray" className="mb-2 text-xl">
                     UI/UX Review Check
                 </Typography>
                 <Typography className="text-sm">
@@ -31,7 +31,7 @@ export function CardDefault() {
                 <Typography variant="h3" color="blue-gray" className="">
                     ₹199
                 </Typography>
-                <Button color="light-blue">Read More</Button>
+                <Button color="light-blue" className="text-xs">Read More</Button>
             </CardFooter>
         </Card>
     );

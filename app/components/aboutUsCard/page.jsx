@@ -22,13 +22,13 @@ export function AboutUsCard() {
                     />
                 </CardHeader>
             <CardBody>
-                <Typography variant="h6" color="gray" className="mb-4 uppercase">
+                <Typography variant="h6" color="gray" className="mb-4 uppercase md:text-[1.75rem] text-2xl lg:text-[2rem]">
                     About us
                 </Typography>
-                <Typography variant="h4" color="blue-gray" className="mb-2">
+                <Typography variant="h4" color="blue-gray" className="mb-2 ">
                     Lyft launching cross-platform service this week
                 </Typography>
-                <Typography color="gray" className="mb-8 font-normal">
+                <Typography color="gray" className="mb-8 font-normal text-sm">
                     Like so many organizations these days, Autodesk is a company in
                     transition. It was until recently a traditional boxed software company
                     selling licenses. Yet its own business model disruption is only part
