@@ -37,20 +37,16 @@ export function DialogWithForm() {
             >
               Enter your Username and password to Sign In.
             </Typography>
-            <Typography className="-mb-2" variant="h6">
-              Your Username
-            </Typography>
-            <Input label="username" size="lg" />
-            <Typography className="-mb-2" variant="h6">
-              Your Password
-            </Typography>
-            <Input label="Password" size="lg" />
+          
+            <Input label="username" color ="light-blue" size="lg" />
+         
+            <Input label="Password" color ="light-blue" size="lg" />
             <div className="-ml-2.5 -mt-3">
-              <Checkbox label="Remember Me" />
+              <Checkbox label="Remember Me" color ="light-blue"/>
             </div>
           </CardBody>
           <CardFooter className="pt-0">
-            <Button variant="gradient" onClick={handleOpen} fullWidth>
+            <Button variant="gradient" color ="light-blue" onClick={handleOpen} fullWidth>
               Sign In
             </Button>
             <Typography variant="small" className="mt-4 flex justify-center">

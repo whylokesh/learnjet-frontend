@@ -33,7 +33,7 @@ import { NotificationsMenu } from "../notificationMenu/page";
 import { DrawerWithNavigation } from "../sidebarDrawer/page";
 import { CreateProductDialog } from "../createProductButton/page";
 import { DialogWithForm } from "../signIn/page";
-import { DialogWithFormSign } from "../signUP/page";
+import { SignInSignUp } from "../signUP/page";
 // profile menu component
 const profileMenuItems = [
     {
@@ -316,8 +316,7 @@ export function ComplexNavbar() {
 
                 <div className={`flex gap-2 sm:hidden md:flex lg:flex hidden`}>
                     <NotificationsMenu />
-                   <DialogWithForm />
-                   <DialogWithFormSign />
+                   <SignInSignUp />
                     <ProfileMenu />
                 </div>
             </div>
