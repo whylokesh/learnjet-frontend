@@ -39,7 +39,7 @@ export function TestimonialCard() {
                 <Typography color="blue-gray" className="mb-4">
                     Frontend Lead @ Google
                 </Typography>
-                <CardBody className="">
+                <CardBody className="text-sm">
                     <Typography>
                         "I found the solution to all my design needs from Creative Tim. I use
                         them as a freelancer in my hobby projects for fun! And it's really

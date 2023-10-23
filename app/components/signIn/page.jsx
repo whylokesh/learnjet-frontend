@@ -35,12 +35,12 @@ export function DialogWithForm() {
               variant="paragraph"
               color="gray"
             >
-              Enter your email and password to Sign In.
+              Enter your Username and password to Sign In.
             </Typography>
             <Typography className="-mb-2" variant="h6">
-              Your Email
+              Your Username
             </Typography>
-            <Input label="Email" size="lg" />
+            <Input label="username" size="lg" />
             <Typography className="-mb-2" variant="h6">
               Your Password
             </Typography>

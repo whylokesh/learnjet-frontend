@@ -11,7 +11,7 @@ import {
   Checkbox,
 } from "@material-tailwind/react";
 
-export function DialogWithForm() {
+export function DialogWithFormSign() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen((cur) => !cur);
 
