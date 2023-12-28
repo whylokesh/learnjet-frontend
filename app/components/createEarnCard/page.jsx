@@ -9,7 +9,7 @@ import {
 
 export function CreateEarnCard() {
     return (
-        <div className="p-8 bg-blue-gray-50/50">
+        <div className="p-4 md:p-6 lg:p-8 bg-blue-gray-50/50">
             <Card className="flex flex-col justify-center items-center" color="light-blue" variant="gradient">
                 <CardBody className="flex flex-col justify-center items-center">
                     <svg
@@ -25,17 +25,17 @@ export function CreateEarnCard() {
                         />
                         <path d="M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z" />
                     </svg>
-                    <Typography variant="h3" color="blue-gray" className="mb-2 md:text-[1.75rem] text-2xl lg:text-[2rem]">
-                        Create & Earn with Metalink
+                    <Typography variant="h3" color="blue-gray" className="mb-2 text-lg md:text-xl lg:text-2xl">
+                        Create & Earn with LearnJet
                     </Typography>
-                    <Typography className="text-sm">
+                    <Typography className="text-xs md:text-sm lg:text-base">
                         Because it&apos;s about motivating the doers. Because I&apos;m here to
                         follow my dreams and inspire others.
                     </Typography>
                 </CardBody>
                 <CardFooter className="pt-0">
                     <a href="#" className="inline-block">
-                        <Button size="sm" variant="text" className="flex items-center gap-2">
+                        <Button size="sm" variant="text" className="flex items-center gap-2 text-xs md:text-sm lg:text-base px-4 py-2 md:px-6 md:py-3 lg:px-6 lg:py-3">
                             Learn More
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"

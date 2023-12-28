@@ -31,7 +31,7 @@ export function ProfileBlogCard() {
                     className="border-2 border-white"
                     src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
                 />
-                <Typography variant="h5" className="my-4 text-gray-400">
+                <Typography variant="h5" className="my-4 text-gray-400 text-lg md:text-xl lg:text-2xl">
                     Tania Andrew
                 </Typography>
                 {/* <Typography
@@ -43,7 +43,7 @@ export function ProfileBlogCard() {
                 </Typography> */}
                 <div className="mt-5 flex items-center justify-center">
                     <a href="#buttons-with-link" >
-                        <Button variant="outlined" color="white">See More</Button>
+                        <Button variant="outlined" color="white" className="text-xs px-4 py-2 md:px-6 md:py-3 lg:px-6 lg:py-3">See More</Button>
                     </a>
                 </div>
             </CardBody>

@@ -18,20 +18,20 @@ export function CardDefault() {
                 />
             </CardHeader>
             <CardBody>
-                <Typography variant="h5" color="blue-gray" className="mb-2 text-xl">
+                <Typography variant="h5" color="blue-gray" className="mb-2 text-lg md:text-xl lg:text-2xl">
                     UI/UX Review Check
                 </Typography>
-                <Typography className="text-sm">
+                <Typography className="text-xs md:text-sm lg:text-base">
                     The place is close to Barceloneta Beach and bus stop just 2 min by
                     walk and near to &quot;Naviglio&quot; where you can enjoy the main
                     night life in Barcelona.
                 </Typography>
             </CardBody>
             <CardFooter className="pt-0 flex justify-between items-center">
-                <Typography variant="h3" color="blue-gray" className="">
+                <Typography variant="h3" color="blue-gray" className="text-lg md:text-xl lg:text-2xl">
                     ₹199
                 </Typography>
-                <Button color="light-blue" className="text-xs">Read More</Button>
+                <Button color="light-blue" className="text-xs px-4 py-2 md:px-6 md:py-3 lg:px-6 lg:py-3">Read More</Button>
             </CardFooter>
         </Card>
     );

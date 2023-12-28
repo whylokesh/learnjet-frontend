@@ -134,7 +134,7 @@ const CreateAndEarnInfoCard = () => {
             </div>
           </CardBody>
           <CardFooter className="pt-0">
-            <Button>Read More</Button>
+            <Button color="light-blue">Read More</Button>
           </CardFooter>
         </Card>
       </div>

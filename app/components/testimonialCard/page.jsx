@@ -34,18 +34,18 @@ export function TestimonialCard() {
                     alt="tania andrew"
                     className="w-20 h-20 mb-4 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
                 />
-                <Typography variant="h5" color="blue-gray" className="text-center mb-2">
+                <Typography variant="h5" color="blue-gray" className="text-center mb-2 text-lg md:text-xl lg:text-2xl">
                     Tania Andrew
-                <Typography color="blue-gray" className="mb-4">
-                    Frontend Lead @ Google
-                </Typography>
-                <CardBody className="text-sm">
-                    <Typography>
-                        "I found the solution to all my design needs from Creative Tim. I use
-                        them as a freelancer in my hobby projects for fun! And it's really
-                        affordable, very humble guys !!!"
-                    </Typography>
-                </CardBody>
+                    {/* <Typography color="blue-gray" className="mb-4">
+                        Frontend Lead @ Google
+                    </Typography> */}
+                    <CardBody>
+                        <Typography className="text-sm md:text-sm lg:text-base">
+                            "I found the solution to all my design needs from Creative Tim. I use
+                            them as a freelancer in my hobby projects for fun! And it's really
+                            affordable, very humble guys !!!"
+                        </Typography>
+                    </CardBody>
                 </Typography>
                 <div className="flex items-center gap-2 text-yellow-700">
                     <StarIcon />

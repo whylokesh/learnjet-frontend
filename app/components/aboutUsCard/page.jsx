@@ -9,7 +9,7 @@ import {
 
 export function AboutUsCard() {
     return (
-        <Card shadow={false} className="bg-blue-gray-50/50 lg:p-9 md:p-6 p-4 flex-col sm:flex:col md:flex-col lg:flex-row py-8">
+        <Card shadow={false} className="bg-blue-gray-50/50 p-4 md:p-6 lg:p-8 flex-col sm:flex:col md:flex-col lg:flex-row py-8">
                 <CardHeader
                     shadow={false}
                     floated={false}
@@ -22,13 +22,13 @@ export function AboutUsCard() {
                     />
                 </CardHeader>
             <CardBody>
-                <Typography variant="h6" color="gray" className="mb-4 uppercase md:text-[1.75rem] text-2xl lg:text-[2rem]">
+                <Typography variant="h6" color="gray" className="mb-4 uppercase text-lg md:text-xl lg:text-2xl">
                     About us
                 </Typography>
-                <Typography variant="h4" color="blue-gray" className="mb-2 ">
+                <Typography variant="h4" color="blue-gray" className="mb-2 text-2xl md:text-3xl lg:text-4xl">
                     Lyft launching cross-platform service this week
                 </Typography>
-                <Typography color="gray" className="mb-8 font-normal text-sm">
+                <Typography color="gray" className="mb-4 font-normal text-sm md:text-sm lg:text-base">
                     Like so many organizations these days, Autodesk is a company in
                     transition. It was until recently a traditional boxed software company
                     selling licenses. Yet its own business model disruption is only part
@@ -41,7 +41,7 @@ export function AboutUsCard() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi amet expedita excepturi mollitia unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit recusandae tempora rerum sint vel deserunt!
                 </Typography>
                 <a href="#" className="inline-block">
-                    <Button variant="text" className="flex items-center gap-2">
+                    <Button variant="text" className="flex items-center gap-2 text-xs md:text-sm lg:text-base p-0">
                         Learn More
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

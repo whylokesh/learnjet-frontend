@@ -251,7 +251,7 @@ export function ComplexNavbar() {
                             className={`mr-4 ml-2 cursor-pointer py-1.5 font-bold text-2xl pl-10 italic sm:block md:block lg:block ${isSearchVisible ? "hidden" : ""
                                 }`}
                         >
-                            Metalink
+                            LearnJet
                         </Typography>
                 </div>
 

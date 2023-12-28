@@ -63,7 +63,7 @@ export function SignInSignUp() {
                
                 variant="small"
                 color="blue-gray"
-                className="ml-1 font-bold"
+                className="ml-1 font-bold select-none cursor-pointer"
                 onClick={handleSignUpOpen}
               >
                 Sign up
@@ -100,7 +100,7 @@ export function SignInSignUp() {
             </div>
           </CardBody>
           <CardFooter className="pt-0">
-            <Button variant="gradient" color="light-blue" onClick={handleSignUpOpen} fullWidth>
+            <Button variant="gradient" color="light-blue" className="" onClick={handleSignUpOpen} fullWidth>
               Sign Up
             </Button>
             <Typography variant="small" className="mt-4 flex justify-center">
@@ -110,7 +110,7 @@ export function SignInSignUp() {
              
                 variant="small"
                 color="blue-gray"
-                className="ml-1 font-bold"
+                className="ml-1 font-bold select-none cursor-pointer"
                 onClick={handleSignInOpen}
               >
                 Sign in
